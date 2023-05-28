@@ -18,6 +18,8 @@ defmodule ExampleWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/my_get_endpoint", MyController, :my_get_endpoint
+    post "/my_post_endpoint", MyController, :my_post_endpoint
   end
 
   # Other scopes may use custom stacks.
